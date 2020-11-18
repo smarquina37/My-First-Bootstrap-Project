@@ -29,8 +29,8 @@
                     <h1>NuCamp</h1>
                     <h2>a better way to camp</h2>
                 </div>
-                <div class="col col-md-4 col-xl-2 mt-4">
-                    <a href="#reserveForm" class="btn btn-info btn-lg" role="button">Reserve Campsite</a>
+                <div class="col-md-4 col-xl-2 mt-4">
+                    <a href="#reserveForm" role="button" class="btn btn-lg btn-info" data-toggle="tooltip" data-placement="bottom" data-html="true" title="Or call us at <br/ ><strong>1-206-555-1234</strong>">Reserve Campsite</a>
                 </div>
             </div>
         </div>
@@ -80,7 +80,7 @@
                 <h3>React Lake Campground</h3>
                 <p class="d-none d-sm-block">Nestled in the foothills of the Chrome Mountains, this campground on the shores of the pristine React Lake is a favorite for fly fishers.</p>
             </div> 
-                <img class="d-flex mr-3 img-thumbnail" src="img/react-lake-thumb.jpg"/>
+                <img class="d-flex ml-3 img-thumbnail" src="img/react-lake-thumb.jpg"/>
             </div>
         </div>
     </div>
@@ -101,9 +101,9 @@
             </div>
         </div>
 
-        <div class="row row-content align-items-center">
+        <div class="row row-content">
             <div class="col-sm-6 mx-auto">
-                <div class="card>">
+                <div class="card">
                     <h3 class="card-header bg-info text-white">Reserve a Campsite</h3>
                     <div class="card-body"> 
                         <form id="reserveForm">
@@ -128,15 +128,17 @@
                                 </div>
                             </div>
 
-                            <div class="col">
-                                <button class="btn btn-primary" type="submit">Submit</button>
+                            <div class="row"> 
+                                <div class="col">
+                                    <button class="btn btn-primary" type="search">Search</button>
+                                </div>
+                            </form>
                             </div>
-                        </form>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-
+    
     <footer class="site-footer">
         <div class="container">
             <div class="row">             
@@ -168,6 +170,12 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
 </body>
 
 </html>
